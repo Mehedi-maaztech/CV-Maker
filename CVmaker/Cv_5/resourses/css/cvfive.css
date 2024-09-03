@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Sometype+Mono:ital@1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+.firstname {
+    font-family: 'Sometype Mono', monospace;
+    font-size: 35px;
+}
+.lastname {
+    font-family: 'Playpen Sans', cursive;
+    font-size: 40px;
+}
+.main-container {
+    width: 900px !important;
+}
+.image {
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+.overimage {
+    width: 200px; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    border-radius: 50%; 
+    border: 2px outset;
+}
+.designation {
+    padding: 3px 10px;
+    background-color: #999;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+.designation::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #999;
+    top: 50%;
+    left: 100%;
+}
+.card {
+    border: 0;
+}
+p {
+    margin: 0px;
+}
+.info-box {
+    box-shadow: 0 3px 10px #999;
+}
+.info-box p {
+    color: rgb(60, 58, 58);
+}
+input:focus {
+    outline: 0;
+}

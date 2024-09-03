@@ -1,0 +1,101 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --profile-bg: #FBCE00;
+    --nameing-bg: #434343;
+    --white: #fff;
+    --bar-bg: #111;
+    --expedu-bg: #E9E9E9;
+    --skill-bar: #dfdcdc;
+}
+p{
+    font-size: 14px;
+    margin: 0px;
+}
+ul li{
+    list-style: none;
+}
+.main-container{
+    width: 900px !important;
+    min-height: 300px;
+    box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.75);
+    border-top: 4px solid var(--profile-bg);
+    border-bottom: 4px solid var(--profile-bg);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.naming {
+    width: 65%;
+    background-color: var(--nameing-bg);
+    color: var(--white);
+    border-radius: 50px;
+}
+.naming p {
+    font-size: 40px;
+}
+.image{
+    width: 185px;
+    height: 185px;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    overflow: hidden;
+}
+.profile-box {
+    border-radius: 40px;
+    background-color: var(--profile-bg);
+}
+.bars .bar1{
+    width: 2px;
+    height: 190px;
+    background-color: var(--bar-bg);
+    border-radius: 2px;
+}
+.bars .bar2{
+    width: 2px;
+    height: 200px;
+    background-color: var(--bar-bg);
+    margin: 0px 5px 0px 5px;
+    border-radius: 2px;
+}
+.bars .bar3{
+    width: 2px;
+    height: 190px;
+    background-color: var(--bar-bg);
+    border-radius: 2px;
+}
+.cont-tag {
+    width: 70%;
+    height: 25px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.btn-icon{
+    z-index: 100; 
+    left: auto; 
+    right: 5%; 
+    top: 8%;
+    background-color: var(--profile-bg);
+}
+.about-tag i,.exptag i,.edutag i {
+    color: var(--profile-bg);
+}
+.expedu {
+    background-color: var(--expedu-bg);
+}
+.brdr-right{
+    border-right: 2px solid var(--bar-bg);
+}
+.skills .skillbar-up {
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--expedu-bg);
+}
+.skills .skillbar-up .skill-bar{
+    width: 0%;
+    height: 5px;
+    background-color: var(--profile-bg);
+}

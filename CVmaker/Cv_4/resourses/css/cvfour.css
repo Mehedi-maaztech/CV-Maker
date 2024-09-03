@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Young+Serif&display=swap');
+
+.first-name {
+    font-family: 'Poppins', sans-serif;
+    color: #FFC107;
+    font-size: 50px;
+}
+.last-name {
+    font-family: 'Young Serif', serif;
+    font-size: 45px;
+}
+.designation {
+    font-family: 'Inter', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #afb2b6b9; 
+    min-width: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.right-side-header {
+    position: relative;
+}
+.right-side-header::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+} 
+.right-side-header::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    top: -70px;
+    right: -140px;
+    z-index: 10;
+} 
+.profile-picture::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: rgb(254, 246, 3);
+    top: -70px;
+    right: -140px;
+    z-index: 10;
+}
+.profile-picture::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: rgba(255, 247, 8, 0.929);
+    top: -46px;
+    left:  49px;
+    z-index: 10;
+}
+.feild-title {
+    background-color: rgb(99, 96, 96);
+    height: 43px;
+    position: relative;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: white;
+}
+.feild-title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 43px;
+    background-color: #FFC107;
+    left: 0px;
+}
+.left-feild-title {
+    background-color: rgb(230, 220, 220);
+    height: 43px;
+    position: relative;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+.left-feild-title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 43px;
+    background-color: #FFC107;
+    left: 0px;
+}
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

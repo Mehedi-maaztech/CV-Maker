@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #bdb5b0;
+}
+:root{
+    --vr-left-bg: #F7DBC6;
+    --vr-hdtitle-color: #F0B18A;
+    --vr-pic-border: #eb7e3a;
+    --vr-rightcol-bg: #fff;
+    --btn-bg: #f0b608;
+}
+p{
+    font-size: 14px;
+}
+.main-container{
+    width: 900px !important;
+    box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.75);
+}
+.right-col{
+    background-color: var(--vr-rightcol-bg);
+}
+.left-col{
+    height: 844px !important;
+    background-color: var(--vr-left-bg);
+}
+.left-col .top{
+    min-height: 100px;
+    padding-top: 40px;  
+}
+.left-col .top .image{
+    width: 185px;
+    height: 185px;
+    border: 3px solid white;
+    border-radius: 70px 70px 70px 70px;
+    overflow: hidden !important;
+}
+.left-col .intrest {
+    min-height: 380px;
+}
+.heading-tag{
+    color: var(--vr-hdtitle-color) !important;
+    border-bottom: 2px solid var(--vr-hdtitle-color) !important;
+}
+.name-tag {
+    font-family: "Assistant", sans-serif !important;
+    font-size: 50px;
+}
+.skiilbarbg{
+    width: 200px; 
+    height: 15px;
+    border: 1px solid darkolivegreen; 
+    border-radius: 5px; 
+    overflow: hidden;
+}
+.rcv_skillPercentage{
+    width: 0%;
+    height: 15px; 
+    background-color: var(--btn-bg);
+}
+.btn-icon{
+    z-index: 100; 
+    left: auto; 
+    right: 5%; 
+    top: 8%;
+    background-color: var(--btn-bg);
+}
+/* .signature-filed{
+    bottom: 0%;
+} */

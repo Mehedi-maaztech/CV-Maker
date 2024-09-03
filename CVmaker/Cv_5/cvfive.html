@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resourses/css/cvfive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>CV maker</title>
+  </head>
+  <body class="py-5 bg-secondary">
+    <section class="cv">
+        <div class="container main-container bg-white">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="pt-4" style="font-size:14px;"><span class="bg-warning pt-4 pb-1 mr-1"><i class="bi bi-geo-alt-fill"></i></span><span id="rcv_location" class="text-muted">Your location</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-between">
+                        <div class="col-4 d-flex flex-column justify-content-center">
+                          <h3 id="rcv_firstname" class="firstname">First Name</h3>
+                          <h2 id="rcv_lastname" class="lastname">Last Name</h2>
+                        </div>
+                        <div class="col-4">
+                          <div class="overimage m-auto">
+                            <div class="image">
+                              <img src="./resourses/image/pexels-jack-winbow-1559486.jpg" alt="A Photo" class="img-fluid" id="rec_ProfiePicture">
+                              <canvas id= "canv1" class="d-none img-fluid"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-n4">
+                        <div class="col-3">
+                          <p id="rcv_designation" class="designation">Designation</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="info-box p-2 mt-5">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h2 style="border-bottom: 2px solid lightgray;">Education</h2>
+                                  <p id="rcv_exam_1">Enter Degree Name</p>
+                                  <p id="rcv_institute_1">Enter Your Institute</p>
+                                  <p id="rcv_year_1">2020 - 2023</p>
+                                  <p id="rcv_grade_1">Enter Grade</p>
+
+                                  <p id="rcv_exam_2" class="mt-3">Enter Degree Name</p>
+                                  <p id="rcv_institute_2">Enter Your Institute</p>
+                                  <p id="rcv_year_2">2020 - 2023</p>
+                                  <p id="rcv_grade_2">Enter Grade</p>
+                                </div>
+                              </div>
+                              
+                              <div class="card">
+                                <div class="card-body">
+                                  <h2 style="border-bottom: 2px solid lightgray;">Reference</h2>
+                                  <p id="rcv_refName">Name</p>
+                                  <p id="rcv_refPosition">Position</p>
+                                  <p id="rcv_refNumber">Number</p>
+                                  <p id="rcv_refEmail">Email</p>
+                                </div>
+                              </div>
+                            
+                          </div>
+                          <div class="contacts mt-5 d-flex" style="height: 130px;">
+                            <div style="height: 100%; width: 25px; text-align: center;" class="bg-warning">
+                              <i class="bi bi-telephone-fill"></i><br>
+                              <i class="bi bi-envelope"></i><br>
+                              <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="ml-1">
+                              <p id="rcv_number">Phone Number</p>
+                              <p id="rcv_email">Email</p>
+                              <p id="rcv_web">Website</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="experiences mt-5">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h2 style="border-bottom: 2px solid lightgray;" class="mb-4">Wrok Experience</h2>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="rcv_companyName1" class="font-weight-bolder">Company Name</h6>
+                                  <p id="rcv_location1">Location</p>
+                                </div>
+                                <div class="col-6">
+                                  <h6 id="rcv_jobPosition1" class="font-weight-bolder">Enter Job Position</h6>
+                                  <p id="rcv_jobYear1">year</p>
+                                  <p id="rcv_workDesc1">Work Description</p>
+                                </div>
+                              </div>
+
+                              <div class="row mt-4">
+                                <div class="col-6">
+                                  <h6 id="rcv_companyName2" class="font-weight-bolder">Company Name</h6>
+                                  <p id="rcv_location2">Location</p>
+                                </div>
+                                <div class="col-6">
+                                  <h6 id="rcv_jobPosition2" class="font-weight-bolder">Enter Job Position</h6>
+                                  <p id="rcv_jobYear2">year</p>
+                                  <p id="rcv_workDesc2">Work Description</p>
+                                </div>
+                              </div>
+
+                              <div class="row mt-4">
+                                <div class="col-6">
+                                  <h6 id="rcv_companyName3" class="font-weight-bolder">Company Name</h6>
+                                  <p id="rcv_location3">Location</p>
+                                </div>
+                                <div class="col-6">
+                                  <h6 id="rcv_jobPosition3" class="font-weight-bolder">Enter Job Position</h6>
+                                  <p id="rcv_jobYear3">year</p>
+                                  <p id="rcv_workDesc3">Work Description</p>
+                                </div>
+                              </div>
+
+                              <div class="row mt-5">
+                                <div class="col-12">
+                                  <h2 style="border-bottom: 2px solid lightgray;" class="mb-4">Expertise</h2>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center pb-2">
+                                  <span id="rcv_skill1">Skill</span>
+                                  <div style="width: 200px; height: 15px; border: 1px solid darkolivegreen; border-radius: 20px; overflow: hidden;">
+                                    <p style="width: 0%;height: 15px; background-color: rgba(75, 65, 65, 0.973);" class="rcv_skillPercentage" id="rcv_skillPercentage1"></p>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center pb-2">
+                                <span id="rcv_skill2">Skill</span>
+                                <div style="width: 200px; height: 15px; border: 1px solid darkolivegreen; border-radius: 20px; overflow: hidden;">
+                                  <p style="width: 0%;height: 15px; background-color: rgba(75, 65, 65, 0.973);" class="rcv_skillPercentage" id="rcv_skillPercentage2"></p>
+                                </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center pb-2">
+                                  <span id="rcv_skill3">Skill</span>
+                                  <div style="width: 200px; height: 15px; border: 1px solid darkolivegreen; border-radius: 20px; overflow: hidden;">
+                                    <p style="width: 0%;height: 15px; background-color: rgba(75, 65, 65, 0.973);" class="rcv_skillPercentage" id="rcv_skillPercentage3"></p>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center pb-2">
+                                  <span id="rcv_skill4">Skill</span>
+                                  <div style="width: 200px; height: 15px; border: 1px solid darkolivegreen; border-radius: 20px; overflow: hidden;">
+                                    <p style="width: 0%;height: 15px; background-color: rgba(75, 65, 65, 0.973);" class="rcv_skillPercentage" id="rcv_skillPercentage4"></p>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center pb-2">
+                                  <span id="rcv_skill5">Skill</span>
+                                  <div style="width: 200px; height: 15px; border: 1px solid darkolivegreen; border-radius: 20px; overflow: hidden;">
+                                    <p style="width: 0%;height: 15px; background-color: rgba(75, 65, 65, 0.973);" class="rcv_skillPercentage" id="rcv_skillPercentage5"></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row justify-content-end">
+                                <div class="col-3 pt-4">
+                                    <div class="signature-filed d-flex flex-wrap align-items-center justify-content-center">
+                                        <hr style="width: 100%; background-color: black; padding: 0px; margin: 0px;">
+                                        <p>Signature</p>
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- modal -->
+            <!-- Button trigger modal -->
+            <a type="button" class="btn btn-warning fixed-top" data-toggle="modal" data-target="#exampleModal"
+            style="z-index: 100; left: auto; right: 9%; top: 8%;"><i class="bi bi-pencil-square"></i></a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="location" placeholder="Enter Your location" onchange="getLocation()">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+
+                      <div class="row justify-content-between">
+                        <div class="col-4 d-flex flex-column justify-content-center">
+                          <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                              <input type="text" class="form-control" id="lastname" placeholder="Last Name" onchange="getName()">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-4">
+                          <div class="overimage m-auto">
+                            <div class="image">
+                                <form>
+                                  <input type="file" class="form-control mt-5" id="profile_input" 
+                                  onchange="savepicture()">
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row mt-n4">
+                        <div class="col-3">
+                        </div>
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="designation" placeholder="Designation" class="ml-0" onchange="getDesignation()">
+                          </div>
+                        </form>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="info-box p-2 mt-5">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h2 style="border-bottom: 2px solid lightgray;">Education</h2>
+                                  <form>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" id="exam_1" placeholder="Enter your degree">
+                                      <input type="text" class="form-control" id="institute_1" placeholder="Enter Your Institute">
+                                      <input type="text" class="form-control" id="year_1" placeholder="Enter year">
+                                      <input type="text" class="form-control" id="grade_1" placeholder="Enter Grade">
+
+                                      <input type="text" class="form-control" id="exam_2" placeholder="Enter your degree" class="mt-3">
+                                      <input type="text" class="form-control" id="institute_2" placeholder="Enter Your Institute">
+                                      <input type="text" class="form-control" id="year_2" placeholder="Enter year">
+                                      <input type="text" class="form-control" id="grade_2" placeholder="Enter Grade" onchange="getEdu()">
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              
+                              <div class="card">
+                                <div class="card-body">
+                                  <h2 style="border-bottom: 2px solid lightgray;">Reference</h2>
+                                </div>
+                                <form>
+                                  <div class="form-group">
+                                    <input class="form-control" type="text" id="refName" placeholder="Name">
+                                    <input class="form-control" type="text" id="refPosition" placeholder="Name">
+                                    <input class="form-control" type="number" id="refNumber" placeholder="Name">
+                                    <input class="form-control" type="email" id="refEmail" placeholder="Name">
+                                  </div>
+                                </form>
+                              </div>
+                          </div>
+                          <div class="contacts mt-5 d-flex" style="height: 130px;">
+                            <div style="height: 100%; width: 25px; text-align: center;" class="bg-warning">
+                              <i class="bi bi-telephone-fill"></i><br>
+                              <i class="bi bi-envelope"></i><br>
+                              <i class="bi bi-globe"></i>
+                            </div>
+
+                            <form>
+                              <div class="form-group">
+                                <input type="number" class="form-control" id="number" placeholder="Phone Number">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="text" class="form-control" id="web" placeholder="WebSite" onchange="getContact()">
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+
+                        <div class="col-8">
+                          <div class="experiences mt-5">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h2 style="border-bottom: 2px solid lightgray;" class="mb-4">Wrok Experience</h2>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="companyName1" placeholder="Company Name">
+                                    <input type="text" class="form-control" id="location1" placeholder="Location">
+                                    <input type="text" class="form-control" id="jobPosition1" placeholder="Enter Job Position">
+                                    <input type="number" class="form-control" id="jobYear1" placeholder="year">
+                                    <input type="text" class="form-control" id="workDesc1" placeholder="Work Description">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="row mt-4">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="companyName2" placeholder="Company Name">
+                                    <input type="text" class="form-control" id="location2" placeholder="Location">
+                                    <input type="text" class="form-control" id="jobPosition2" placeholder="Enter Job Position">
+                                    <input type="number" class="form-control" id="jobYear2" placeholder="year">
+                                    <input type="text" class="form-control" id="workDesc2" placeholder="Work Description">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="row mt-4">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="companyName3" placeholder="Company Name">
+                                    <input type="text" class="form-control" id="location3" placeholder="Location">
+                                    <input type="text" class="form-control" id="jobPosition3" placeholder="Enter Job Position">
+                                    <input type="number" class="form-control" id="jobYear3" placeholder="year">
+                                    <input type="text" class="form-control" id="workDesc3" placeholder="Work Description" onchange="getExperience()">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="row mt-5">
+                                <div class="col-12">
+                                  <h2 style="border-bottom: 2px solid lightgray;" class="mb-4">Expertise</h2>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="skill1" placeholder="Skill Name">
+                                    <input type="number" class="form-control skillPercentage" id="skillPercentage1" placeholder="Skill Name">
+
+                                    <input type="text" class="form-control" id="skill2" placeholder="Skill Name">
+                                    <input type="number" class="form-control skillPercentage" id="skillPercentage2" placeholder="Skill Name">
+
+                                    <input type="text" class="form-control" id="skill3" placeholder="Skill Name">
+                                    <input type="number" class="form-control skillPercentage" id="skillPercentage3" placeholder="Skill Name">
+
+                                    <input type="text" class="form-control" id="skill4" placeholder="Skill Name">
+                                    <input type="number" class="form-control skillPercentage" id="skillPercentage4" placeholder="Skill Name">
+
+                                    <input type="text" class="form-control" id="skill5" placeholder="Skill Name">
+                                    <input type="number" class="form-control skillPercentage" id="skillPercentage5" placeholder="Skill Name" onchange="getSkill()">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resourses/js/cvfive.js"></script>
+    <script src="./resourses/SimpleImage.js"></script>
+  </body>
+</html>

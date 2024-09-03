@@ -1,0 +1,42 @@
+
+            var counter=1;
+
+            $(function(){
+                $(document).on('click','.closeproductsfileds', function(){
+                    $(this).closest('.adproduct').remove();
+                });
+
+                $('#saleselectproducts').on('click', function(){
+                    var id = "salesproducts"+counter;
+                    $('#add_new_salesproducts').append('<div class="row m-3 p-2 adproduct" id="'+id+'" style="background-color: #202333;">\
+                        <div class="col-md-3 col-12">\
+                        </div>\
+                        <div class="col-md-2 col-12">\
+                            <input type="number"  class="form-control" name="quantity[]" id="salequantity" placeholder="Quantity" required/>\
+                        </div>\
+                        <div class="col-md-2 col-12">\
+                            <input type="text"  class="form-control" name="warranty[]" placeholder="Warranty" required/>\
+                        </div>\
+                        <div class="col-md-2 col-12">\
+                            <input type="text"  class="form-control" name="productserial[]" placeholder="Product Serial"/>\
+                        </div>\
+                        <div class="col-md-2 col-12">\
+                            <input type="number"  class="form-control" name="unitprice[]" id="saleunitprice" placeholder="Unit Price" required/>\
+                        </div>\
+                        <div class="col-md-1 col-12">\
+                            <a class="btn btn-danger closeproductsfileds">\
+                                <i class="fas fa-times"></i>\
+                            </a>\
+                        </div>\
+                    </div>');
+
+                    counter++;
+                });
+            })
+
+
+
+<a id="saleselectproducts" class="btn btn-secondary">
+  <i class="fas fa-shopping-bag mx-1 mr-3"></i>Add Products</a>
+</a>
+<div id="add_new_salesproducts"></div>

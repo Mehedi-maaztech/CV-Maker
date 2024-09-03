@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+:root{
+    --container-bg: #f7f1f1;
+    --border-line: #928e8e;
+    --skill-clr: #FAC004;
+    --btn-bg: #fff;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #bdb5b0;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+p{
+    margin: 0px !important;
+}
+.main-container{
+    width: 900px !important;
+    background-color: var(--container-bg);
+    box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.75);
+}
+.head-tag {
+    border-bottom: 1px solid var(--border-line) !important;
+}
+.name-tag{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.name-feild .emper{
+    position: absolute; 
+    width: 30px; 
+    height: 35px; 
+    background-color: var(--skill-clr); 
+    border-radius: 0px 5px 5px 0px; 
+    top: 28%; 
+    left: -25px !important;
+}
+.skill i {
+    color: var(--skill-clr);
+}
+.top .image .temp{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color: var(--skill-clr);
+    border-radius: 0px 0px 5px 5px; 
+    top: -48px !important;
+    right: 10px;
+}
+.btn-icon{
+    z-index: 100; 
+    left: auto; 
+    right: 5%; 
+    top: 8%;
+    background-color: var(--btn-bg);
+}
+.image{
+    width: 185px;
+    height: 185px;
+}
+.signature-filed{
+    bottom: -22%;
+}
